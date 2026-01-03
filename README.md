@@ -17,7 +17,9 @@ PortionNet addresses the challenge of accurate food nutrition estimation from si
 
 ### Architecture
 
-![PortionNet Architecture](assets/architecture.png)
+<p align="center">
+  <img src="assets/architecture.png" alt="PortionNet Architecture" width="100%">
+</p>
 
 *Figure 1: Overview of the PortionNet framework. During training, the model uses both RGB images and point clouds with cross-modal knowledge distillation. At inference, only RGB images are required.*
 
