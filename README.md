@@ -46,7 +46,7 @@ pip install open3d
 
 ### MetaFood3D
 
-1. Download the MetaFood3D dataset from [here]([https://github.com/GCVCG/MetaFood3D](https://lorenz.ecn.purdue.edu/~food3d/)
+1. Download the MetaFood3D dataset from [here](https://lorenz.ecn.purdue.edu/~food3d/)
 2. Extract and organize as follows:
 
 ```
