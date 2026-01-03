@@ -150,12 +150,6 @@ If you find this work useful, please cite our paper:
 }
 ```
 
-## Acknowledgments
-
-- MetaFood3D dataset: [Chen et al., 2024](https://github.com/GCVCG/MetaFood3D)
-- SimpleFood45 dataset: [Vinod et al., 2024](https://github.com/GCVCG/SimpleFood45)
-- MFP3D baseline: [Ma et al., 2024](https://arxiv.org/abs/2411.10492)
-
 ## Contact
 
 For questions or issues:
