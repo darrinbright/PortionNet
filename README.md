@@ -8,8 +8,8 @@ Official PyTorch implementation of **PortionNet**, a novel cross-modal knowledge
 
 > **PortionNet: Distilling 3D Geometric Knowledge for Food Nutrition Estimation**  
 > Darrin Bright, Rakshith Raj, Kanchan Keisham  
-> Vellore Institute of Technology
-> *Accepted at CVIS 2025 - 11th Annual Conference on Vision and Intelligent Systems*
+> Vellore Institute of Technology  
+> *Accepted at CVIS 2025 - 11th Annual Conference on Vision and Intelligent Systems*  
 > *arXiv preprint arXiv:2512.22304, 2025*
 
 ## Overview
