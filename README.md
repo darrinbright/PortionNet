@@ -11,31 +11,9 @@ Official PyTorch implementation of **PortionNet**, a novel cross-modal knowledge
 > Vellore Institute of Technology  
 > *arXiv preprint arXiv:2512.22304, 2025*
 
-## Highlights
-
-- State-of-the-art RGB-only performance on MetaFood3D:
-  - 17.43% volume MAPE (57.9% improvement over MFP3D)
-  - 15.36% energy MAPE (77.4% improvement over MFP3D)
-  
-- Exceptional cross-dataset generalization on SimpleFood45:
-  - 12.17% energy MAPE (49.4% improvement over MFP3D)
-  - 100% classification accuracy
-
-- No depth sensors required at inference - works with standard smartphone cameras
-
-- Novel dual-mode training strategy with cross-modal knowledge distillation
-
 ## Overview
 
 PortionNet addresses the challenge of accurate food nutrition estimation from single RGB images by learning 3D geometric features from point clouds during training while requiring only RGB images at inference.
-
-### Key Components
-
-1. **Dual RGB Encoders**: ViT-B/16 + ResNet-18 for robust visual feature extraction
-2. **PointNet Geometry Encoder**: Extracts 3D spatial features from point clouds (training only)
-3. **RGB-to-Point-Cloud Adapter**: Lightweight network that mimics point cloud features
-4. **Cross-Modal Fusion**: Bidirectional attention for feature integration
-5. **Multi-Task Heads**: Simultaneous food classification, volume, and energy estimation
 
 ### Architecture
 
@@ -159,44 +137,6 @@ python src/evaluate.py \
   --output_file results_simplefood45.json
 ```
 
-## Results
-
-### MetaFood3D Performance (RGB-only Mode)
-
-| Metric | Mean ± Std | Individual Seeds (7, 13, 2023) |
-|--------|------------|--------------------------------|
-| Accuracy (%) | 98.34 ± 0.58 | 98.12, 97.88, 98.16 |
-| Volume MAE (mL) | 25.39 ± 2.59 | 27.51, 26.13, 27.27 |
-| Volume MAPE (%) | 17.43 ± 0.81 | 28.34, 24.81, 22.73 |
-| Energy MAE (kcal) | 32.26 ± 0.43 | 38.09, 32.13, 30.88 |
-| Energy MAPE (%) | 15.36 ± 1.33 | 41.91, 37.52, 31.94 |
-| R² Score | 0.926 ± 0.004 | 0.9216, 0.9271, 0.9110 |
-
-### Comparison with State-of-the-Art
-
-**MetaFood3D**
-
-| Method | Vol MAPE (%) | Eng MAPE (%) |
-|--------|--------------|--------------|
-| Density Map† | - | 663.43 |
-| Stereo† | 210.90 | - |
-| Voxel† | 104.07 | - |
-| 3D Assisted† | 79.33 | 102.25 |
-| MFP3D† | 41.43 | 68.05 |
-| **PortionNet (Ours)** | **17.43 ± 0.81** | **15.36 ± 1.33** |
-| Improvement | -57.9% | -77.4% |
-
-†Results from MFP3D paper
-
-**SimpleFood45 (Cross-Dataset)**
-
-| Method | Vol MAPE (%) | Eng MAPE (%) |
-|--------|--------------|--------------|
-| 3D Assisted† | 14.01 | 25.13 |
-| MFP3D† | 16.15 | 24.03 |
-| **PortionNet (Ours)** | **23.51 ± 0.92** | **12.17 ± 1.36** |
-| Improvement | - | -49.4% |
-
 ## Citation
 
 If you find this work useful, please cite our paper:
@@ -219,5 +159,4 @@ If you find this work useful, please cite our paper:
 ## Contact
 
 For questions or issues:
-- Open an issue on GitHub
 - Email: darrin.bright2022@vitstudent.ac.in
