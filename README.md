@@ -46,7 +46,7 @@ pip install open3d
 
 ### MetaFood3D
 
-1. Download the MetaFood3D dataset from [here](https://github.com/GCVCG/MetaFood3D)
+1. Download the MetaFood3D dataset from [here]([https://github.com/GCVCG/MetaFood3D](https://lorenz.ecn.purdue.edu/~food3d/))
 2. Extract and organize as follows:
 
 ```
@@ -66,7 +66,7 @@ MetaFood3D/
 
 ### SimpleFood45
 
-Download SimpleFood45 from [here](https://github.com/GCVCG/SimpleFood45) and organize similarly.
+Download SimpleFood45 from [here](https://lorenz.ecn.purdue.edu/~gvinod/simplefood45/#:~:text=It%20contains%20images%20of%2045,%2C%20weight%2C%20and%20energy%20content) and organize similarly.
 
 ## Training
 
