@@ -155,5 +155,5 @@ If you find this work useful, please cite our paper:
 
 ## Contact
 
-Email: darrin.bright2022@vitstudent.ac.in
-Email: rakshith.raj2022@vitstudent.ac.in
+- **Darrin Bright**: [darrin.bright2022@vitstudent.ac.in](mailto:darrin.bright2022@vitstudent.ac.in)
+- **Rakshith Raj**: [rakshith.raj2022@vitstudent.ac.in](mailto:rakshith.raj2022@vitstudent.ac.in)
